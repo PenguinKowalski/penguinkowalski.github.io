@@ -1,0 +1,1 @@
+Commissione di un rendering per la ristrutturazione di un tram torinese. Modello , texture e tutto interamente realizzato personalmente
