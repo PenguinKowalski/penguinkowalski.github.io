@@ -3,16 +3,21 @@
 --------------------------------------------------------------*/
 
 :root {
-    --color-text: #272829;
-    --color-text-p: #173b6c;
-    --color-hover: #37b3ed;
-    --color-palette1: #149ddd;
-    --color-palette2: #050d18;
+    --color-text: #F2F2F2;
+    --color-text-p: #F2F2F2;
+    --color-hover: #9a905e;
+    --color-palette1: #CDBE78;
+    --color-palette2: #CDBE78;
+    --color-background: #383838;
+    --color-background-darker: #2b2b2b;
 }
 
+
+
 body {
-  font-family: "Open Sans", sans-serif;
-  color: var(--color-text);
+    font-family: "Open Sans", sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);    
 }
 
 a {
@@ -57,10 +62,10 @@ h6 {
   line-height: 0;
 }
 
-.back-to-top:hover {
-  background: #2eafec;
-  color: #fff;
-}
+    .back-to-top:hover {
+        background: var(--color-hover);
+        color: #fff;
+    }
 
 .back-to-top.active {
   visibility: visible;
@@ -230,7 +235,7 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("https://gifimage.net/wp-content/uploads/2017/10/matrix-gif-animiert-1.gif") top center;
+    background: url("https://camo.githubusercontent.com/ee298251ed400bcfa3adee12b9262ff4f6e945db7257300190206a48b1bcec92/68747470733a2f2f64726976652e676f6f676c652e636f6d2f75633f6578706f72743d766965772669643d315a457947764943546f734741353853565771386b424b386d42577945706b3954") top center;
     background-size: cover;
 }
 
@@ -318,7 +323,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+
 }
 
 .section-title {
@@ -384,56 +389,6 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
-
-.facts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.facts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: var(--color-palette1);
-  float: left;
-  line-height: 0;
-}
-
-.facts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  color: var(--color-palette2);
-  margin-left: 60px;
-}
-
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Merriweather", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
-
-.facts .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #122f57;
-  font-size: 15px;
-  font-family: "Ubuntu", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.facts .count-box a:hover {
-  color: #1f5297;
-}
 
 /*--------------------------------------------------------------
 # Skills
@@ -461,7 +416,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: var(--color-background-darker);
   height: 10px;
 }
 
@@ -484,10 +439,10 @@ section {
 }
 
 .resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #1f5297;
-  position: relative;
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid var(--color-palette2);
+    position: relative;
 }
 
 .resume .resume-item h4 {
@@ -501,12 +456,12 @@ section {
 }
 
 .resume .resume-item h5 {
-  font-size: 16px;
-  background: #e4edf9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
+    font-size: 16px;
+    background: var(--color-background-darker);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .resume .resume-item ul {
@@ -522,15 +477,15 @@ section {
 }
 
 .resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: VAR(--color-background-darker);
+    border: 2px solid var(--color-palette2);
 }
 
 /*--------------------------------------------------------------
@@ -541,13 +496,13 @@ section {
 }
 
 .portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 35px auto;
-  list-style: none;
-  text-align: center;
-  background: #fff;
-  border-radius: 50px;
-  padding: 2px 15px;
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: var(--color-background-darker);
+    border-radius: 50px;
+    padding: 2px 15px;
 }
 
 .portfolio #portfolio-flters li {
@@ -558,7 +513,6 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -581,7 +535,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 0;
   right: 0;
@@ -605,16 +559,16 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  font-size: 28px;
-  text-align: center;
-  background: rgba(20, 157, 221, 0.75);
-  transition: 0.3s;
-  width: 50%;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    background: rgba(205, 190, 120, 0.75);
+    transition: 0.3s;
+    width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: rgba(154, 144, 94, 0.95);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
@@ -771,10 +725,10 @@ section {
 }
 
 .contact .info {
-  padding: 30px;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    background: var(--color-background-darker);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
@@ -783,7 +737,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #121212;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -870,8 +824,8 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 20px 0;
-  background: #f9f9f9;
+    padding: 20px 0;
+    background: var(--color-background-darker);
 }
 
 .breadcrumbs h2 {
@@ -895,7 +849,6 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #0e2442;
   content: "/";
 }
 
