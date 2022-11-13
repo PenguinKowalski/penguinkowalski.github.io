@@ -703,11 +703,11 @@ section {
 }
 
 .services .title a {
-  color: #343a40;
+  color: var(--color-palette1);
 }
 
 .services .title a:hover {
-  color: var(--color-palette1);
+  color: var(--color-text);
 }
 
 .services .description {
