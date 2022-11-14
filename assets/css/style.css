@@ -235,7 +235,7 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("https://camo.githubusercontent.com/ee298251ed400bcfa3adee12b9262ff4f6e945db7257300190206a48b1bcec92/68747470733a2f2f64726976652e676f6f676c652e636f6d2f75633f6578706f72743d766965772669643d315a457947764943546f734741353853565771386b424b386d42577945706b3954") top center;
+    background: url("../img/hero.gif") top center;
     background-size: cover;
 }
 

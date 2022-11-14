@@ -4,8 +4,9 @@
     "\\assets",
     "\\assets\\css",
     "\\assets\\img",
-    "\\assets\\js"
+    "\\assets\\js",
+    "\\assets\\vendor",
+    "\\assets\\vendor\\swiper"
   ],
-  "SelectedNode": "\\assets\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }
